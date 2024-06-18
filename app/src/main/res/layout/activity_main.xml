@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1919"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="00:00:00"
+        android:textSize="88sp"
+        android:textColor="#D1C2C2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="400dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Stop"
+            android:textSize="20sp"
+            android:backgroundTint="@color/red"
+            app:cornerRadius="100dp"
+            app:elevation="20dp"
+            android:padding="16dp"
+            android:textColor="#A52626"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Start"
+            android:textSize="19sp"
+            android:backgroundTint="#227526"
+            app:cornerRadius="150dp"
+            app:elevation="20dp"
+            android:padding="16dp"
+            android:textColor="#99E83C"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/reset"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:text="Reset"
+            android:textSize="17sp"
+            android:backgroundTint="@color/grey"
+            app:cornerRadius="150dp"
+            app:elevation="20dp"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp" />
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
